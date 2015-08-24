@@ -1,7 +1,5 @@
 ### Heroku Shields
 
-[![Heroku App Status](http://heroku-shields.herokuapp.com/heroku-shields)](https://heroku-shields.herokuapp.com)
-
 SVG Heroku badges using [shields.io](http://shields.io)
 
 #### Usage
