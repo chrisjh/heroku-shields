@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %title Heroku Shields
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
+    %meta{ name: 'description', content: 'Heroku Shields' }
+    %link{ href: '/favicon.ico', rel: :icon}
+    %link{ href: '/stylesheets/application.css', rel: :stylesheet, type: 'text/css' }
+    %script{ src: 'http://code.jquery.com/jquery-2.1.1.min.js', type: 'text/javascript' }
+    %script{ src: '/javascripts/application.js', type: 'text/javascript' }
+
+  %body
+    %header
+
+    .main{ role: 'main' }
+      = yield(:content)
+
+    %footer
+      %p.copyright
+        %a{ href: 'https://github.com/chrisjh', target: '_blank'} by Chris Hendel

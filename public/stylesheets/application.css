@@ -1,0 +1,21 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+input {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 2em;
+  width: 240px;
+  height: 2em;
+  padding: 0.25em;
+}
+
+.muted {
+  color: #bbb;
+}
