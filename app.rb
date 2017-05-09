@@ -22,14 +22,14 @@ def badge_url(badge)
   "https://img.shields.io/badge/#{badge}.svg"
 end
 
-def redirect_to_badge
+def redirect_to_badge(query)
   begin
   status_code = open(heroku_url).status.first
   rescue OpenURI::HTTPError => error
     response = error.io
     status_code = response.status.first
   end
-  redirect badge_url(badge status_code)
+  redirect badge_url(badge status_code) + query
 end
 
 get '/' do
@@ -46,5 +46,5 @@ get '/:app' do
   response.headers['Last-Modified'] = Time.now.httpdate
   response.headers['ETag'] = Time.now.utc.strftime("%s%L")
 
-  redirect_to_badge
+  redirect_to_badge request.env['rack.request.query_string']
 end
