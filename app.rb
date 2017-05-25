@@ -29,7 +29,7 @@ def redirect_to_badge(query)
     response = error.io
     status_code = response.status.first
   end
-  redirect badge_url(badge status_code) + query
+  redirect badge_url(badge status_code) + '?' + query
 end
 
 get '/' do
